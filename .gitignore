@@ -1,0 +1,25 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[探]logs/
+/[Mm]emoryCaptures/
+/UserSettings/
+
+# Visual Studio / Rider / VS Code files
+.vs/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.polyql
+*.svclog
+*.com.apple.decouple
+
+# OS generated
+.DS_Store
+Thumbs.db

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c967208fd63002e44a79702ef8323572, type: 3}
+  m_Name: Normal Wheel Data
+  m_EditorClassIdentifier: Assembly-CSharp::WheelData
+  wheelName: Normal
+  slots:
+  - icon: {fileID: 21300000, guid: c1741ffcd0e669c48b5a1e94dae6e30f, type: 3}
+    prizeType: 2
+    prizeName: rew_sniper_tier3
+    descText: 1x
+    value: 1
+    weight: 10
+  - icon: {fileID: 21300000, guid: aa014afaf1831bd43be2adf4f0be6926, type: 3}
+    prizeType: 3
+    prizeName: bomb
+    descText: 
+    value: 1
+    weight: 800
+  - icon: {fileID: 21300000, guid: 210f17527853eaa4cacef626a256ba40, type: 3}
+    prizeType: 2
+    prizeName: rew_rifle_pts
+    descText: 1x
+    value: 1
+    weight: 2000
+  - icon: {fileID: 21300000, guid: 504778e7201598f4d9d1982ea658a544, type: 3}
+    prizeType: 2
+    prizeName: rew_rifle_tier2
+    descText: 2x
+    value: 2
+    weight: 250
+  - icon: {fileID: 21300000, guid: ed0ec30c1ecb9a848b6237dd884b036e, type: 3}
+    prizeType: 2
+    prizeName: rew_helmet_pumpkin
+    descText: 5x
+    value: 5
+    weight: 50
+  - icon: {fileID: 21300000, guid: 76f79ee47279697479afe0f181a60e7e, type: 3}
+    prizeType: 0
+    prizeName: rew_gold
+    descText: 3000x
+    value: 3000
+    weight: 250
+  - icon: {fileID: 21300000, guid: f7dc7ceb34cb5834d93f2b882dd3748c, type: 3}
+    prizeType: 2
+    prizeName: rew_chest_silver
+    descText: 1x
+    value: 1
+    weight: 500
+  - icon: {fileID: 21300000, guid: c67055cebcd8ad2418b62b3a5bfa40b4, type: 3}
+    prizeType: 1
+    prizeName: rew_cash
+    descText: $300
+    value: 300
+    weight: 2000
