@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("One or more WheelData references are missing in GameManager!");
         }
+
+        FindWheel();
     }
 
     private void Init()
@@ -57,6 +59,11 @@ public class GameManager : MonoBehaviour
     }
 
     private void OnValidate()
+    {
+        FindWheel();
+    }
+
+    void FindWheel()
     {
         if (wheel == null)
         {
@@ -118,7 +125,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Wheel component not found in the scene!");
             return;
         }
-        
+
         GameState.IncrementZone();
         int zone = GameState.GetZone();
         ZoneType zoneType = GetZoneType(zone);

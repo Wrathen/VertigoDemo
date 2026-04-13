@@ -18,18 +18,15 @@ public class WheelSpinner : MonoBehaviour
 
     void OnValidate()
     {
-        if (spinButton == null)
-        {
-            spinButton = GetComponentInChildren<Button>();
-            if (spinButton == null)
-            {
-                Debug.LogError("Spin Button not found in children.");
-            }
-        }
+        FindSpinButton();
     }
 
     void Awake()
     {
+        // In builds, the OnValidate doesn't work, so we find the button here as well.
+        // To be honest, I'd just assign it through the editor, but this was required in the docs.
+        // In the UIManager, I did it the old-fashion way.
+        FindSpinButton();
         if (spinButton == null)
         {
             Debug.LogError("Spin Button is not assigned.");
@@ -42,6 +39,18 @@ public class WheelSpinner : MonoBehaviour
         GameManager.Instance.OnGameEnd.AddListener(DisableSpinButton);
         GameManager.Instance.OnPlayerRevive.AddListener(EnableSpinButton);
         GameManager.Instance.OnGameStart.AddListener(EnableSpinButton);
+    }
+
+    void FindSpinButton()
+    {
+        if (spinButton == null)
+        {
+            spinButton = GetComponentInChildren<Button>();
+            if (spinButton == null)
+            {
+                Debug.LogError("Spin Button not found in children.");
+            }
+        }
     }
 
     void DisableSpinButton()
