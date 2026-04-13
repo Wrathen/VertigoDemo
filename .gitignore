@@ -6,6 +6,8 @@
 /[探]logs/
 /[Mm]emoryCaptures/
 /UserSettings/
+/.vscode/
+/Logs/
 
 # Visual Studio / Rider / VS Code files
 .vs/
