@@ -113,6 +113,7 @@ public class WheelSpinner : MonoBehaviour
         Debug.Log("Spin Result: " + result.slotConfig.prizeName + " (Value: " + result.slotConfig.value + ")");
 
         isSpinning = true;
+        GameManager.Instance.OnSpinStart?.Invoke();
         wheelTransform.DORotate(new Vector3(0, 0, finalAngle), spinDuration, RotateMode.FastBeyond360)
             .SetEase(spinEase)
             .OnComplete(() => {

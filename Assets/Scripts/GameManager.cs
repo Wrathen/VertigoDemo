@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnRewardClaimed;
     [HideInInspector]
     public UnityEvent OnZoneChanged;
+    [HideInInspector]
+    public UnityEvent OnSpinStart;
 
     private void Awake()
     {

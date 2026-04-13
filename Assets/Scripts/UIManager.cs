@@ -67,6 +67,7 @@ public class UIManager : MonoBehaviour
 
         GameManager.Instance.OnZoneChanged.AddListener(UpdateZoneEffects);
         GameManager.Instance.OnZoneChanged.AddListener(UpdateLeaveButtonState);
+        GameManager.Instance.OnSpinStart.AddListener(HideLeaveButton);
 
         giveupButton.onClick.AddListener(OnGiveupButtonClicked);
         reviveButtonGold.onClick.AddListener(OnReviveButtonGoldClicked);
@@ -202,5 +203,10 @@ public class UIManager : MonoBehaviour
         {
             leaveButton.gameObject.SetActive(false);
         }
+    }
+
+    public void HideLeaveButton()
+    {
+        leaveButton.gameObject.SetActive(false);
     }
 }
